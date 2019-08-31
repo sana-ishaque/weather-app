@@ -1,5 +1,7 @@
 # weather-app
 
-#### published at :
+#### published at :  https://sana-ishaque.github.io/weather-app/
 
-![](images/night.jpg)
+![](images/night.png)
+
+![](images/night-weather.png)
