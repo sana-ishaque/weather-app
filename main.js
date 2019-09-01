@@ -30,37 +30,37 @@ function getWeather() {
             document.querySelector('#temp').innerHTML = `${Math.floor(response.data.main.temp - 273.15)}°C `;
             document.querySelector('#city').innerHTML = `${response.data.name}, ${response.data.sys.country}`;
             if (response.data.weather[0].main === "Clouds" && response.data.weather[0].description === "overcast clouds") {
-                document.querySelector('#weather').innerHTML = `<img class="outsource" src="icon/Overcast.png">`;
+                document.querySelector('#weather').innerHTML = `<img class="outsource" src="/icon/Overcast.png">`;
                 document.querySelector('#main').innerHTML = (response.data.weather[0].description);
             } else if (response.data.weather[0].main === "Clouds") {
-                document.querySelector('#weather').innerHTML = `<img class="outsource" src="icon/iconfinder_weather-2_1214004.svg">`;
+                document.querySelector('#weather').innerHTML = `<img class="outsource" src="/icon/iconfinder_weather-2_1214004.svg">`;
                 document.querySelector('#main').innerHTML = (response.data.weather[0].description);
             } else if (response.data.weather[0].main === "Rain") {
-                document.querySelector('#weather').innerHTML = `<img class="outsource" src="icon/rain.png">`;
+                document.querySelector('#weather').innerHTML = `<img class="outsource" src="/icon/rain.png">`;
                 document.querySelector('#main').innerHTML = (response.data.weather[0].description);
             } else if (response.data.weather[0].main == "Clear") {
-                document.querySelector('#weather').innerHTML = `<img class="outsource" src="icon/Sunny.png">`;
+                document.querySelector('#weather').innerHTML = `<img class="outsource" src="/icon/Sunny.png">`;
                 document.querySelector('#main').innerHTML = (response.data.weather[0].description);
-            } else if (response.data.weather[0].main == "Fog" || response.data.weather[0].main == "Mist" || response.data.weather[0].main == "smoke") {
-                document.querySelector('#weather').innerHTML = `<img class="outsource" src="icon/Fog.png">`;
+            } else if (response.data.weather[0].main == "Fog" || response.data.weather[0].main == "Mist" || response.data.weather[0].main == "Smoke") {
+                document.querySelector('#weather').innerHTML = `<img class="outsource" src="/icon/Fog.png">`;
                 document.querySelector('#main').innerHTML = (response.data.weather[0].description);
-            } else if (response.data.weather[0].main == "haze") {
-                document.querySelector('#weather').innerHTML = '<img class="outsource" src=\"/icon/iconfinder_weather-31_1530368.svg">';
+            } else if (response.data.weather[0].main == "Haze") {
+                document.querySelector('#weather').innerHTML = `<img class="outsource" src="/icon/hazy.png">`;
                 document.querySelector('#main').innerHTML = (response.data.weather[0].description);
             } else if (response.data.weather[0].main == "Thunderstorm") {
                 document.querySelector('#weather').innerHTML = `<img class="outsource"  src="/icon/storm.svg">`;
                 document.querySelector('#main').innerHTML = (response.data.weather[0].description);
             } else if (response.data.weather[0].main == "Drizzle") {
-                document.querySelector('#weather').innerHTML = `<img class="outsource" src="icon/drizzle.png">`;
+                document.querySelector('#weather').innerHTML = `<img class="outsource" src="/icon/drizzle.png">`;
                 document.querySelector('#main').innerHTML = (response.data.weather[0].description)
             } else if (response.data.weather[0].main == "Sleet") {
-                document.querySelector('#weather').innerHTML = `<img class="outsource" src="icon/Sleet.png">`;
+                document.querySelector('#weather').innerHTML = `<img class="outsource" src="/icon/Sleet.png">`;
                 document.querySelector('#main').innerHTML = (response.data.weather[0].description)
             } else if (response.data.weather[0].main == "Hail") {
-                document.querySelector('#weather').innerHTML = `<img class="outsource" src="icon/Hail_Heavy.png">`;
+                document.querySelector('#weather').innerHTML = `<img class="outsource" src="/icon/Hail_Heavy.png">`;
                 document.querySelector('#main').innerHTML = (response.data.weather[0].description)
             } else if (response.data.weather[0].main == "Snow") {
-                document.querySelector('#weather').innerHTML = `<img class="outsource" src="icon/snow.png">`;
+                document.querySelector('#weather').innerHTML = `<img class="outsource" src="/icon/snow.png">`;
                 document.querySelector('#main').innerHTML = (response.data.weather[0].description)
             }
             document.querySelector('#humidity').innerHTML = ` Humidity :  ${response.data.main.humidity}`;
