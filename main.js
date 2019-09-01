@@ -1,7 +1,3 @@
-// https://github.com/search?q=sana&type=Topicsprotocol : https
-// server adress : www.github.com
-// path : /search
-// querry string: q=sana&type=Topicsprotocol
 
 let bodyElement = document.querySelector("body");
 function night() {
@@ -34,7 +30,7 @@ function getWeather() {
             document.querySelector('#temp').innerHTML = `${Math.floor(response.data.main.temp - 273.15)}°C `;
             document.querySelector('#city').innerHTML = `${response.data.name}, ${response.data.sys.country}`;
             if (response.data.weather[0].main === "Clouds" && response.data.weather[0].description === "overcast clouds") {
-                document.querySelector('#weather').innerHTML = `<img src="icon/Overcast.png">`;
+                document.querySelector('#weather').innerHTML = `<img class="outsource" src="icon/Overcast.png">`;
                 document.querySelector('#main').innerHTML = (response.data.weather[0].description);
             } else if (response.data.weather[0].main === "Clouds") {
                 document.querySelector('#weather').innerHTML = `<img class="outsource" src="icon/iconfinder_weather-2_1214004.svg">`;
