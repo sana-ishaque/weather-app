@@ -5,3 +5,7 @@
 ![](images/night.png)
 
 ![](images/night-weather.png)
+
+![](images/day.png)
+
+![](images/day-weather.png)
