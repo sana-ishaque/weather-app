@@ -57,7 +57,7 @@ function getWeather() {
                 document.querySelector('#weather').innerHTML = `<img class="outsource" src="./icon/Sleet.png">`;
                 document.querySelector('#main').innerHTML = (response.data.weather[0].description)
             } else if (response.data.weather[0].main == "Hail") {
-                document.querySelector('#weather').innerHTML = `<img class="outsource" src="../icon/Hail_Heavy.png">`;
+                document.querySelector('#weather').innerHTML = `<img class="outsource" src="./icon/Hail_Heavy.png">`;
                 document.querySelector('#main').innerHTML = (response.data.weather[0].description)
             } else if (response.data.weather[0].main == "Snow") {
                 document.querySelector('#weather').innerHTML = `<img class="outsource" src="./icon/snow.png">`;
