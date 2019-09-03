@@ -1,4 +1,6 @@
 let bodyElement = document.querySelector("body");
+let searchBtn = document.querySelector("input[type=submit]");
+searchBtn.addEventListener("click", getWeather);
 
 function night() {
     bodyElement.classList.remove("day");
@@ -17,10 +19,10 @@ if (new Date().getHours() >= 6 && new Date().getHours() <= 20) {
 }
 
 // document.querySelector('input').addEventListener('', getWeather) this was workimg on every key pressed
-function getWeather() {
+function getWeather(e) {
     let cityName = document.querySelector('input').value;
-
-    // Make a request for a user with a given ID
+    e.preventDefault()
+        // Make a request for a user with a given ID
     axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=12e844e9b297084077b1b9af18b8babb`)
         .then(function(response) {
             // handle success
@@ -76,4 +78,6 @@ function getWeather() {
         .finally(function() {
             // always executed
         });
+
+    return false;
 }
