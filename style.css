@@ -175,6 +175,11 @@ h1 {
     animation-delay: 0ms, 7123ms;
 }
 
+#submit-btn{
+     width: 60px;
+    height: 37px;   
+}
+
 @keyframes move1 {
     0% {
         transform: translateX(-1vw) translateY(-40vh) scale(0.29);
